@@ -196,29 +196,34 @@ Feature        → create-feature
 
 ---
 
+## 📖 References 快速索引
+
+详见 `references/quick-reference.md`（自然语言示例 + Fallback + 组合流）
+
+每个 skill 文件都有 TL;DR 摘要：
+
+| Skill | TL;DR | 说明 |
+|-------|-------|------|
+| bmad-sm.md | Sprint规划核心 | Sprint Planning、Daily Standup、Retrospective |
+| bmad-po.md | 需求质量评估 | User Story、Acceptance Criteria |
+| pac-create-epic.md | Epic规范化 | Epic创建标准、依赖分析 |
+| pac-create-ticket.md | Ticket规范化 | Ticket模板、优先级 |
+| milestone-tracker.md | 里程碑追踪 | 进度监控、风险识别 |
+| project-health-check.md | 健康度检查 | 团队健康、阻塞识别 |
+| project-timeline-simulator.md | 预测分析 | Burndown、Sprint预测 |
+| create-prd.md | PRD模板化 | PRD文档标准化 |
+| create-prp.md | PRP模板化 | 产品需求提案 |
+| create-feature.md | Feature规范 | Feature文档标准 |
+
+---
+
 ## 🚨 常见错误
 
-### 错误 1: 过度路由
-
-```
-❌ "用户说规划 Sprint，路由到 bmad-sm，
-    然后又问用户要不要用 milestone-tracker"
-✓  直接路由到最可能的 skill，让用户决定是否深入
-```
-
-### 错误 2: 路由到不存在的 skill
-
-```
-❌ 根据关键词猜 skill 名称
-✓  严格按照技能地图中的 skill 名称路由
-```
-
-### 错误 3: 忘记 Fallback
-
-```
-❌ 无法匹配时不知所措
-✓  无法匹配时 → bmad-sm（让 SM 核心帮你判断）
-```
+| 错误 | 正确做法 |
+|------|---------|
+| 直接说"规划" | 说明规划什么（Sprint？需求？） |
+| 不验证就 claim 完成 | 先确认任务类型再路由 |
+| 过度路由 | 直接路由到最可能的 skill |
 
 ---
 
