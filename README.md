@@ -53,6 +53,43 @@ hermes -p sm -s sm-ext-skill
 | create-prp | PRP模板化 | P2 |
 | create-feature | Feature规范 | P2 |
 
+## 同步到 Hermes
+
+### 安装 Skill 文件到 Hermes Profile
+
+```bash
+# 进入仓库目录
+cd /home/gql/repos/sm-ext-skill
+
+# 执行同步脚本
+bash sync-to-hermes.sh sm
+```
+
+同步后目录结构：
+```
+~/.hermes/profiles/sm/skills/
+├── sm-ext-skill/                       # 路由器
+│   ├── SKILL.md
+│   └── references/
+├── bmad-sm/                           # 独立 skill（软链接）
+│   └── SKILL.md → sm-ext-skill/references/bmad-sm.md
+├── bmad-po/                           # 独立 skill（软链接）
+│   └── SKILL.md → sm-ext-skill/references/bmad-po.md
+└── ...                                # 其他 skills
+```
+
+### 验证安装
+
+```bash
+# 查看已安装的 skills
+ls -la ~/.hermes/profiles/sm/skills/
+
+# 验证软链接
+readlink -f ~/.hermes/profiles/sm/skills/bmad-sm/SKILL.md
+```
+
+---
+
 ## 工作流
 
 详见 [SKILL.md](SKILL.md)
