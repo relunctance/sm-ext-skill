@@ -27,6 +27,8 @@ Scrum Master 技能索引路由器 - 接收任何 SM 任务，智能推荐最合
 - [技能地图](#技能地图)
 - [工作流](#工作流)
 - [升级](#升级)
+- [AGENTS.md](AGENTS.md) - AI Agent 使用指南
+- [INSTALL.md](INSTALL.md) - 安装部署说明
 
 ## 快速开始
 
