@@ -14,7 +14,7 @@
 cd /home/gql/repos/sm-ext-skill
 
 # 执行同步脚本
-bash sync-to-hermes.sh sm
+python sync_to_hermes.py sm
 ```
 
 ### 方式 2：手动安装
@@ -27,7 +27,7 @@ git clone https://github.com/relunctance/sm-ext-skill.git ~/.hermes/profiles/sm/
 cd ~/.hermes/profiles/sm/skills/sm-ext-skill
 
 # 3. 执行同步
-bash sync-to-hermes.sh sm
+python sync_to_hermes.py sm
 ```
 
 ## 验证安装
@@ -80,7 +80,7 @@ MODE_CONFIG: full_auto  # full_auto | semi_auto
 ```bash
 cd /home/gql/repos/sm-ext-skill
 git pull
-bash sync-to-hermes.sh sm
+python sync_to_hermes.py sm
 ```
 
 ## 卸载

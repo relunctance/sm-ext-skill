@@ -64,7 +64,7 @@ hermes -p sm -s sm-ext-skill
 cd /home/gql/repos/sm-ext-skill
 
 # 执行同步脚本
-bash sync-to-hermes.sh sm
+python sync_to_hermes.py sm
 ```
 
 同步后目录结构：
